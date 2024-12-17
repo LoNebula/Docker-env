@@ -1,0 +1,4 @@
+OS:ubuntu
+language:python3.10
+
+ubuntu内からコマンドで操作してコードを実行するタイプの環境
