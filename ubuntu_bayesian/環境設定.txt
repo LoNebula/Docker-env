@@ -1,0 +1,24 @@
+<!-- コンテナをビルド・起動します -->
+docker-compose up --build
+
+ビルドが完成したら違うコマンドプロンプトを立ち上げて
+<!-- コンテナ表示一覧 -->
+<!-- 実行中コンテナ -->
+docker ps
+
+コンテナの名前をコビー
+
+<!-- コンテナ内に入る -->
+docker exec -it <コンテナ名> bash
+
+<!-- Ubuntu内コマンド -->
+cd src
+
+python3 auto.py
+
+
+使い終わったコンテナは削除しても良い
+<!-- まとめて一括削除 -->
+docker stop $(docker ps -aq)            # 全てのコンテナを停止
+docker rm $(docker ps -aq)             # 全てのコンテナを削除
+docker rmi $(docker images -q)         # 全てのイメージを削除
