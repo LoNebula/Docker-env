@@ -1,0 +1,10 @@
+torch
+torchsummary
+torchviz
+optuna
+numpy
+scikit-learn
+joblib
+colorama
+matplotlib
+tqdm

@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/usr/src
+    ports:
+      - "5001:5000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true  # インタラクティブシェルを開く設定
+    tty: true         # ターミナルを維持
